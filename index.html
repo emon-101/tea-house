@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- Tailwind css cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/97ee3b164d.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <style>
+        .manrope {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+    </style>
 </head>
-<body>
-    <h1 class="bg-slate-600 text-center">Hello Word!</h1>
+<body class="manrope">
+    <main class="max-w-[1440px] mx-auto px-16 lg:px-28">
+        <!-- Header section -->
+         <header class="md:flex justify-between items-center mt-10">
+            <!-- Text Content -->
+             <div class="space-y-6">
+                <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold text-gray-950">
+                    It's good <br> tea time at The <br>Tea House
+                </h1>
+                <p class="font-medium text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="cursor-pointer px-5 py-3 bg-linear-to-bl from-red-500 to-orange-500 rounded-lg text-white font-bold hover:grayscale">
+                    Explore More <i class="fa-solid fa-arrow-up rotate-45"></i>
+                </button>
+             </div>
+             <!-- Header Image -->
+              <div class="relative">
+                <img class="w-full" src="./images/banner.png" alt="">
+                <div class="flex items-center gap-2.5 bg-white shadow-xl p-2.5 rounded-lg absolute top-48 lg:top-96 md:left-32">
+                    <div class=""><i class="fa-solid fa-star text-amber-300 text-2xl"></i></div>
+                    <div class="">
+                        <h3 class="lg:text-2xl font-bold">5.00</h3>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+         </header>
+    </main>
 </body>
 </html>
